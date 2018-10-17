@@ -1,0 +1,67 @@
+
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title{
+  padding: 0 16px 0 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.ivu-menu-light{
+  background: transparent;
+}
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu):after{
+  left: 0;
+  background: #00E2CC;
+}
+.ivu-menu-vertical.ivu-menu-light:after{
+  display: none;
+}
+.ivu-menu-vertical .ivu-menu-submenu-title-icon{
+  top: 12px;
+}
+.ivu-menu-opened .ivu-menu-submenu-title{
+  background: #0EC1AF;
+}
+
+.ivu-menu .ivu-menu{
+  /*opacity: 0.2;*/
+  background: #368a81;
+}
+ /*选中颜色*/
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu){
+  background: #3C7C88;
+  color: #fff;
+}
+
+.collapsed-menu .ivu-menu-item,.collapsed-menu .ivu-menu-submenu-title {
+  padding: 0px !important;
+  height: 64px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsed-menu .ivu-menu-submenu-title-icon{
+  display: none;
+}
+.collapsed-menu li{
+  position: relative;
+  text-align:center;
+}
+.collapsed-menu li ul{
+  position: absolute;
+  background-color: #ccc;
+  left: 66px;
+  top: 0;
+  z-index: 99;
+  width: 140px;
+}
+.collapsed-menu li ul li{
+  height: 664px;
+}
+
+
+/*所以列表页容器样式*/
+.continer{
+  margin: 8px;
+  border-radius: 4px;
+  background: #fff;
+}

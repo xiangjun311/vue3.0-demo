@@ -37,10 +37,8 @@
           </Submenu>
         </Menu>
       </Sider>
-      <Layout :style="{height: '100vh'}">
-        <Header>
-          <div>{{env}}</div>
-        </Header>
+      <Layout :style="{height: '100%'}">
+        <Header></Header>
         <Content>
           <router-view />
         </Content>
@@ -53,19 +51,15 @@ export default {
   name:"Home",
   data () {
     return {
-      env:'',
       isCollapsed: false,
       mode: 'vertical'
     }
   },
 
   created(){
-    console.log(process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'development') {
-      this.env = "本地"
-    } else {
-      this.env = "开发"
-    }
+    console.log(process.env)
+    // console.log("home")
+
   },
   computed: {
     menuitemClasses: function () {
@@ -112,8 +106,6 @@ export default {
 
 .ivu-layout-header {
   height: 32px;
-  line-height: 32px;
-  color:#fff;
 }
 
 .ivu-layout-content {
